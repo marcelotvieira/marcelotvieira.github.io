@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcelo Vieira</title>
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="src/fontawesome/css/all.css">
+    <link rel="stylesheet" href="src/fontawesome/css/solid.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="photo"><img src="src/images/WhatsApp Image 2022-05-27 at 11.42.13.jpeg" alt="">
+                <h2>Marcelo Vieira</h2>
+                <p>Creative Developer</p>
+            </div>
+            <div class="nav" id="nav">
+                <ul class="menu" id="menu">
+                    <li class="home" onmouseleave="toggleOption(id)"  onmouseenter="toggleOption(id)" id="home"><a href="#home-page"><i class="fa-solid fa-house-user"></i><p>Início</p></a></li>
+                    <li class="portfolio"onmouseleave="toggleOption(id)" onmouseenter="toggleOption(id)" id="portfolio"><a href="#portfolio-page"><i class="fa-solid fa-folder-open"></i><p>Portfólio</p></a></li>
+                    <li class="conteudo" onmouseleave="toggleOption(id)"  onmouseenter="toggleOption(id)" id="conteudo"><a href="#conteudo-page"><i class="fa-solid fa-book-open"></i><p>Conteúdo</p></a></li>
+                    <li class="sobre" onmouseleave="toggleOption(id)"  onmouseenter="toggleOption(id)" id="sobre"><a href="#sobre-page"><i class="fa-solid fa-address-card"></i><p>Sobre mim</p></a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <span class="burguer-button">
+                    </span>
+                </div>
+            </div>
+            <div class="info">
+                <ul class="socials">
+                    <li><i class="fa-brands fa-linkedin fa-lg"></i></li>
+                    <li><i class="fa-brands fa-github fa-lg"></i></li>
+                    <li><i class="fa-brands fa-slack fa-lg"></i></li>
+                </ul>
+                <p>Belo Horizonte - Minas Gerais - Brasil</p>
+            </div>
+        </header>
+        <section class="page">
+            <div onmouseenter="referenciaAdd(id)" onmouseleave="referenciaRemove(id)" class="home-page" id="home-page">
+                <h1>Olá!</h1>
+                <h2>Eu sou Marcelo Vieira,</h2>
+                <p>e sou estudante de desenvolvimento Web</p>
+                <div class="home-content">
+                    <form action="submit" class="contact-form">
+                        <h3>Fale comigo:</h3>
+                        <input type="text" name="name" id="name" class="form-input" placeholder="Seu nome">
+                        <input placeholder="contato@mail.com.br" type="email" name="email" id="email" class="form-input">
+                        <textarea name="message" id="message" cols="30" rows="4" class="message" placeholder="Sua mensagem aqui..."></textarea>
+                        <button>Enviar</button>
+                    </form>
+                    <div class="personal-info">
+                        <h3>O que eu estou estudando?</h3>
+                        <p>Faço parte de uma <a href="">escola</a> focada em desenvolvimento Web, e eu diria desenvolvimento pessoal pela enfática abordagem as <b>Soft-skills</b>. O conteúdo passa pelo desenvolvimento <b>Front-end</b>, <b>Back-end</b>, e <b>Ciência da Compútação</b>.</p>
+                    </div>
+                </div>
+            </div>
+            <div  onmouseenter="referenciaAdd(id)" onmouseleave="referenciaRemove(id)"   class="portfolio-page" id="portfolio-page">
+                <div class="title">
+                    <h1>Portfolio</h1>
+                   
+                </div>
+                <div class="slider">
+                    <div class="portfolio-content" id="port1">
+                        <div><img src="src/images/graphic.jpg" alt="">
+                        </div>
+                        <a href=""><i class="fa-brands fa-github fa-2x"></i></a>
+                        <div class="component-info">
+                            <h2>Expenses Chart Component</h2>
+                            <p>Este desafio está disponível em <a target="_blanc" href="https://frontendmentor.io">Frontendmentor.io</a>, o Hub disponibiliza os packs de design junto de um guia de estilo. Esta foi a primeira vez que construí a partir de um <b>JSON</b>.</p>
+                            <h3>Foram Utilizados:</h3>
+                            <ul>
+                                <li>Marcações Semânticas com <b>HTML</b></li>
+                                <li>Propriedades de estilo com <b>CSS</b></li>
+                                <li>Posicionamento utilizando <b>Flexbox</b></li>
+                                <li>Modus operandi <b>Mobile First</b></li>
+                                <li><b>JavaScript</b> para manipular o gráfico.</li>
+                            </ul>
+                           
+                        </div>
+                    </div>
+                    <div class="portfolio-content" id="port2">
+                        <div><img src="src/images/faq.jpg" alt="">
+                        </div>
+                        <a href=""><i class="fa-brands fa-github fa-2x"></i></a>
+                        <div class="component-info">
+                            <h2>Faq Accordion Card</h2>
+                            <p>Este desafio está disponível em <a target="_blanc" href="https://frontendmentor.io">Frontendmentor.io</a>, o Hub disponibiliza os packs de design junto de um guia de estilo.</p>
+                            <h3>Foram Utilizados:</h3>
+                            <ul>
+                                <li>Marcações Semânticas com <b>HTML</b></li>
+                                <li>Propriedades de estilo com <b>CSS</b></li>
+                                <li>Posicionamento utilizando <b>Flexbox</b></li>
+                                <li>Modus operandi <b>Mobile First</b></li>
+                                <li><b>Javascript para manipular as classes de estilo</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio-content" id="port3">
+                        <div><img id="comment-view" src="src/images/comments.jpg" alt="">
+                        </div>
+                        <a href=""><i class="fa-brands fa-github fa-2x"></i></a>
+                        <div class="component-info">
+                            <h2>Interactive Comments Section</h2>
+                            <p>Este desafio está disponível em <a target="_blanc" href="https://frontendmentor.io">Frontendmentor.io</a>, o Hub disponibiliza os packs de design junto de um guia de estilo. Este desafio ainda está em desenvolvimento <b>JSON</b>.</p>
+                            <h3>Foram Utilizados:</h3>
+                            <ul>
+                                <li>Elementos <b>HTML</b> gerados com <b>Javascript</b></li>
+                                <li>Informações consumidas a partir de um <b>JSON</b></li>
+                                <li>Propriedades de estilo com <b>CSS</b></li>
+                                <li>Posicionamento utilizando <b>Flexbox</b></li>
+                                <li>Modus operandi <b>Mobile First</b></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-navigation">
+                    <a href="#port1"><img src="src/images/graphic.jpg" alt="" class="portfolio-navigation-option"></a>
+                    <a href="#port2"><img src="src/images/faq.jpg" alt="" class="portfolio-navigation-option"></a>
+                    <a href="#port3"><img src="src/images/comments.jpg" alt="" class="portfolio-navigation-option"></a>
+                </div>
+                </div>
+                <div  onmouseenter="referenciaAdd(id)" onmouseleave="referenciaRemove(id)"   class="conteudo-page" id="conteudo-page">
+                    <div class="title">
+                        <h1>Conteúdos</h1>
+                       
+                    </div>
+                   <ul class="tecnologias">
+                       <li><i class="fa-brands fa-git-alt fa-2x"></i> <i class="fa-brands fa-github fa-2x"></i>  <br><ul>
+                           <li>Versionamento local e remoto de código</li>
+                           <li>Práticas mais utilizadas num real ambiente de trabalho.</li>
+                       </ul></li>
+                       <li><i class="fa-brands fa-html5 fa-2x"></i> <br><ul>
+
+                               <li>Marcação Semântica</li>
+                               <li>DOM</li>
+
+                       </ul></li>
+                       <li><i class="fa-brands fa-css3-alt fa-2x"></i> <br><ul>
+                           <li>Estilização com classes.</li> <li>Aproveitamento de código</li>
+                      </ul></li>
+                       <li><i class="fa-brands fa-js-square fa-2x"></i> <br><ul>
+                           <li>Manipulação de DOM</li>
+                           <li>Tratamento de dados</li>
+                           <li>Iniciando Framework Front-end</li>
+                       </ul></li>
+                   </ul>
+                </div>
+                <div  onmouseenter="referenciaAdd(id)" onmouseleave="referenciaRemove(id)"   class="sobre-page" id="sobre-page">
+                    <div>
+                        <div class="title">
+                            <h1>Sobre mim</h1>
+                        </div>
+                            <div class="sobre-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cum alias, vero commodi voluptatem suscipit, sunt assumenda fugit, molestiae dolorum magni. Alias, voluptatibus a. Vitae mollitia ut nulla veniam numquam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos tempora, possimus laboriosam itaque animi.</p>
+                            </div>
+                    </div>
+                    <h2>O que eu gosto de fazer?</h2>
+                        <div class="hobbie-section">
+                            
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quisquam officia rerum possimus perferendis sit iure natus exercitationem nam iste dolorem placeat delectus. omnis.</p>
+                            
+                            <div class="hobbies">
+                            
+                                <img src="src/images/hobbie1.jpeg" alt="" class="hobbie">
+                                <img src="src/images/hobbie2.jpeg" alt="" class="hobbie">
+                                <img src="src/images/hobbie3.jpeg" alt="" class="hobbie">
+                            </div>
+                        </div>
+                       
+                    
+                </div>
+                
+                
+            </div>
+            
+
+        </section>
+        
+    </div>
+    
+    <script src="https://kit.fontawesome.com/30ba7089ff.js" crossorigin="anonymous"></script>
+    <script src="src/application/index.js"></script>
+</body>
+</html>
