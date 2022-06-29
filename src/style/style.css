@@ -99,7 +99,6 @@ header img {
   color: rgb(84, 92, 109);
   font-size: 13px;
   font-weight: 700;
-  filter: drop-shadow(0px 3px 8px rgba(27, 85, 161, 0.4));
   text-align: right;
 }
 
@@ -109,7 +108,7 @@ header img {
 .sobre.active p {
   visibility: visible;
   width: 80px;
-  transition: 0.6s;
+  transition: 0.4s;
 }
 
 .menu li a {
