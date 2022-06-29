@@ -161,7 +161,7 @@ label {
     left: 0;
     right: 0;
     margin: auto;
-    background-image: url(src/images/winnerBackground.png);
+    background-image: url(/tic-tac-toe/src/images/winnerBackground.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
