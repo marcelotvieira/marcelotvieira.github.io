@@ -1,0 +1,102 @@
+{
+"materials" : [
+    {
+        "name": "Calculator",
+        "description": "Uma calculadora com suporte a mouse e teclado, e um switcher para alterar o tema. Este desafio está disponível em frontendmentor.io",
+        "image": "../../calculator/images/prevImage.jpg",
+        "source": "https://marcelotvieira.github.io/calculator/",
+        "github": "https://github.com/marcelotvieira/calculator-app"
+        },
+    {
+        "name": "Tic-Tac-Toe",
+        "description": "Tradicional jogo da velha, possui um placar para contagem de vitórias.",
+        "image": "../../tic-tac-toe/src/images/prevImage.png",
+        "source": "https://marcelotvieira.github.io/tic-tac-toe/",
+        "github": "https://github.com/marcelotvieira/tic-tac-toe"
+        },
+        {
+            "name": "Tic-Tac-Toe",
+            "description": "Tradicional jogo da velha, possui um placar para contagem de vitórias.",
+            "image": "../../tic-tac-toe/src/images/prevImage.png",
+            "source": "https://marcelotvieira.github.io/tic-tac-toe/"
+            },
+            {
+                "name": "Tic-Tac-Toe",
+                "description": "Tradicional jogo da velha, possui um placar para contagem de vitórias.",
+                "image": "../../tic-tac-toe/src/images/prevImage.png",
+                "source": "https://marcelotvieira.github.io/tic-tac-toe/"
+                },
+                {
+                    "name": "Tic-Tac-Toe",
+                    "description": "Tradicional jogo da velha, possui um placar para contagem de vitórias.",
+                    "image": "../../tic-tac-toe/src/images/prevImage.png",
+                    "source": "https://marcelotvieira.github.io/tic-tac-toe/"
+                    },
+                    {
+                        "name": "Tic-Tac-Toe",
+                        "description": "Tradicional jogo da velha, possui um placar para contagem de vitórias.",
+                        "image": "../../tic-tac-toe/src/images/prevImage.png",
+                        "source": "https://marcelotvieira.github.io/tic-tac-toe/"
+                        },
+                        {
+                            "name": "Tic-Tac-Toe",
+                            "description": "Tradicional jogo da velha, possui um placar para contagem de vitórias.",
+                            "image": "../../tic-tac-toe/src/images/prevImage.png",
+                            "source": "https://marcelotvieira.github.io/tic-tac-toe/"
+                            },
+                            {
+                                "name": "Tic-Tac-Toe",
+                                "description": "Tradicional jogo da velha, possui um placar para contagem de vitórias.",
+                                "image": "../../tic-tac-toe/src/images/prevImage.png",
+                                "source": "https://marcelotvieira.github.io/tic-tac-toe/"
+                                },
+                                {
+                                    "name": "Tic-Tac-Toe",
+                                    "description": "Tradicional jogo da velha, possui um placar para contagem de vitórias.",
+                                    "image": "../../tic-tac-toe/src/images/prevImage.png",
+                                    "source": "https://marcelotvieira.github.io/tic-tac-toe/"
+                                    },
+                                    {
+                                        "name": "Tic-Tac-Toe",
+                                        "description": "Tradicional jogo da velha, possui um placar para contagem de vitórias.",
+                                        "image": "../../tic-tac-toe/src/images/prevImage.png",
+                                        "source": "https://marcelotvieira.github.io/tic-tac-toe/"
+                                        },
+                                        {
+                                            "name": "Tic-Tac-Toe",
+                                            "description": "Tradicional jogo da velha, possui um placar para contagem de vitórias.",
+                                            "image": "../../tic-tac-toe/src/images/prevImage.png",
+                                            "source": "https://marcelotvieira.github.io/tic-tac-toe/"
+                                            },
+                                            {
+                                                "name": "Tic-Tac-Toe",
+                                                "description": "Tradicional jogo da velha, possui um placar para contagem de vitórias.",
+                                                "image": "../../tic-tac-toe/src/images/prevImage.png",
+                                                "source": "https://marcelotvieira.github.io/tic-tac-toe/"
+                                                },
+                                                {
+                                                    "name": "Tic-Tac-Toe",
+                                                    "description": "Tradicional jogo da velha, possui um placar para contagem de vitórias.",
+                                                    "image": "../../tic-tac-toe/src/images/prevImage.png",
+                                                    "source": "https://marcelotvieira.github.io/tic-tac-toe/"
+                                                    },
+                                                    {
+                                                        "name": "Tic-Tac-Toe",
+                                                        "description": "Tradicional jogo da velha, possui um placar para contagem de vitórias.",
+                                                        "image": "../../tic-tac-toe/src/images/prevImage.png",
+                                                        "source": "https://marcelotvieira.github.io/tic-tac-toe/"
+                                                        },
+                                                        {
+                                                            "name": "Tic-Tac-Toe",
+                                                            "description": "Tradicional jogo da velha, possui um placar para contagem de vitórias.",
+                                                            "image": "../../tic-tac-toe/src/images/prevImage.png",
+                                                            "source": "https://marcelotvieira.github.io/tic-tac-toe/"
+                                                            },
+                                                            {
+                                                                "name": "Tic-Tac-Toe",
+                                                                "description": "Tradicional jogo da velha, possui um placar para contagem de vitórias.",
+                                                                "image": "../../tic-tac-toe/src/images/prevImage.png",
+                                                                "source": "https://marcelotvieira.github.io/tic-tac-toe/"
+                                                                }
+]
+}

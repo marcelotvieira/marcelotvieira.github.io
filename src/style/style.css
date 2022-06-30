@@ -8,14 +8,13 @@ html {
 }
 
 body {
-  background-color: rgba(82, 150, 182, 0.288);
+  background-color: rgb(33, 43, 56);
   font-family: "Quicksand", sans-serif;
   line-height: 1.5;
 }
 
 .container {
   display: flex;
-
   height: 80vh;
   border-radius: 14px;
   max-width: 86%;
@@ -26,7 +25,7 @@ body {
   left: 0;
   margin: auto;
   filter: drop-shadow(0px 0px 10px rgba(47, 111, 128, 0.4));
-  border: 2px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
 }
 
@@ -42,16 +41,17 @@ body {
   display: none;
 }
 
+
 header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 12%;
   min-width: 100px;
-  background-color: rgba(239, 249, 255, 0.85);
+  background-color: rgb(33, 43, 56);
   padding: 40px;
-  border-right: 6px dotted rgba(128, 128, 128, 0.07);
-  color: rgb(84, 92, 109);
+  border-right: 6px dotted rgb(104, 140, 238);;
+  color: rgb(166, 182, 218);
 }
 
 .photo {
@@ -68,7 +68,7 @@ header h2 {
 }
 
 header p {
-  color: rgb(84, 92, 109);
+  color: rgb(166, 182, 218);
   font-size: 12px;
   font-weight: 500;
 }
@@ -96,7 +96,7 @@ header img {
   overflow: hidden;
   transition: 0.2s;
   white-space: nowrap;
-  color: rgb(84, 92, 109);
+  color: rgb(166, 182, 218);
   font-size: 13px;
   font-weight: 700;
   text-align: right;
@@ -181,10 +181,10 @@ a {
 
 #home-page {
   background-image: linear-gradient(
-      35deg,
-      rgba(239, 249, 255, 0.85),
-      rgba(239, 249, 255, 0.85)
-    ),
+    90deg,
+    rgba(33, 43, 56, 0.90),
+    rgb(21, 33, 49, 0.90) 
+  ),
     url(/src/images/bg-home.png);
 
   background-repeat: no-repeat;
@@ -193,10 +193,10 @@ a {
 
 #portfolio-page {
   background-image: linear-gradient(
-      35deg,
-      rgba(239, 249, 255, 0.85),
-      rgba(239, 249, 255, 0.85)
-    ),
+    90deg,
+    rgba(33, 43, 56, 0.90),
+    rgb(21, 33, 49, 0.90) 
+  ),
     url(/src/images/bg-portfolio1.png);
   background-repeat: no-repeat;
   background-position: right;
@@ -204,10 +204,10 @@ a {
 
 #conteudo-page {
   background-image: linear-gradient(
-      35deg,
-      rgba(239, 249, 255, 0.85),
-      rgba(239, 249, 255, 0.85)
-    ),
+    90deg,
+    rgba(33, 43, 56, 0.90),
+    rgb(21, 33, 49, 0.90) 
+  ),
     url(/src/images/bg-conteudo.png);
   background-repeat: no-repeat;
   background-position: right;
@@ -215,10 +215,10 @@ a {
 
 #sobre-page {
   background-image: linear-gradient(
-      35deg,
-      rgba(239, 249, 255, 0.85),
-      rgba(239, 249, 255, 0.85)
-    ),
+    90deg,
+    rgba(33, 43, 56, 0.90),
+    rgb(21, 33, 49, 0.90) 
+  ),
     url(/src/images/bg-sobre.png);
   background-repeat: no-repeat;
   background-position: right;
@@ -227,7 +227,7 @@ a {
 
 
 #home-page {
-  color: rgb(84, 92, 109);
+  color: rgb(166, 182, 218);
 }
 
 #home-page h1 {
@@ -242,20 +242,17 @@ a {
 
 .personal-info {
   max-width: 300px;
-  border-left: 6px solid rgba(104, 140, 238, 0.6);
+  border-left: 6px solid rgb(104, 140, 238);
   height: fit-content;
   background-image: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0)
+    rgba(39, 54, 68, 0.8),
+    rgba(21, 33, 44, 0.8)
   );
   padding: 30px;
   font-weight: 500;
   font-size: 14px;
-  visibility: hidden;
-  opacity: 0;
-  transition-delay: 1s;
-  transition: 0.6s;
+
 }
 
 .personal-info p a {
@@ -277,11 +274,11 @@ a {
 
 .contact-form {
   width: 360px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   background-image: linear-gradient(
     135deg,
-    rgb(104, 140, 238),
-    rgba(185, 227, 252, 0.2) 30%
+    rgba(104, 140, 238, 0.603),
+    rgba(185, 227, 252, 0.1) 30%
   );
   filter: drop-shadow(0px 0px 10px rgba(47, 111, 128, 0.4));
   border-radius: 12px;
@@ -289,19 +286,9 @@ a {
   flex-direction: column;
   padding: 22px;
   margin: 80px 80px;
-  transform: translateX(80px) rotateZ(6deg);
-  opacity: 0;
-  transition: 0.3s;
 }
 
-.home-page.active .contact-form,
-.home-page.active .personal-info {
-  visibility: visible;
-  transform: translateX(00px);
-  transition-delay: 1s;
-  opacity: 1;
-  transition: 1s;
-}
+
 
 .contact-form h3 {
   color: rgb(255, 255, 255);
@@ -352,37 +339,43 @@ textarea {
   gap: 2.5rem;
   align-items: center;
   min-width: 100%;
-  color: rgb(84, 92, 109);
+  color: rgb(166, 182, 218);
   font-weight: 500;
 }
-
-.slider {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-  height: 70%;
-  scroll-behavior: smooth;
-  padding-bottom: 40px;
-  scrollbar-width: none;
+.portfolio-content a, .personal-info p a {
+  color: white;
+  font-weight: 600;
 }
 
-.slider::-webkit-scrollbar {
-  display: none;
+
+
+.portfolio-container::-webkit-scrollbar{
+  background-color: rgb(16, 24, 37);
+  border-radius: 12px;
+  height: 20px;
+
+}
+.portfolio-container::-webkit-scrollbar-thumb {
+  background-color: rgb(104, 140, 238);
+  border-radius: 12px;
+  border: 7px solid rgb(16, 24, 37);
+
 }
 
 .component-info {
   max-width: 320px;
   margin-left: 80px;
-  border-left: 6px solid rgba(104, 140, 238, 0.6);
+  border-left: 6px solid rgb(104, 140, 238);
   height: fit-content;
   background-image: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0)
+    rgba(39, 54, 68, 0.8),
+    rgba(21, 33, 44, 0.8)
   );
   padding-left: 24px;
   font-size: 14px;
   padding-top: 50px;
+  padding-bottom: 20px;
 }
 .component-info h2 {
     margin: 20px 0;
@@ -465,14 +458,14 @@ textarea {
   list-style-type: none;
   font-size: 16px;
   font-weight: 700;
-  border-left: 6px solid rgba(104, 140, 238, 0.7);
+  border-left: 6px solid rgb(104, 140, 238);
   height: 70%;
   padding: 10px 0;
   padding-left: 10px;
   background-image: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0)
+    rgba(39, 54, 68, 0.8),
+    rgba(21, 33, 44, 0.8)
   );
   padding: 30px;
 }
@@ -486,8 +479,8 @@ textarea {
   border: none;
   margin: 10px 0;
   list-style-type: circle;
-  color: rgb(84, 92, 109);
-  border-bottom: 4px dotted rgba(104, 140, 238, 0.15);
+  color: rgb(166, 182, 218);
+  border-bottom: 4px dotted rgb(159, 180, 240);
 }
 
 .tecnologias i {
@@ -514,7 +507,7 @@ textarea {
 .sobre-page p {
     font-size: 16px;
     font-weight: 600;
-    color: rgb(84, 92, 109);
+    color: rgb(166, 182, 218);
     margin: 40px 0;
 }
 
@@ -600,7 +593,7 @@ textarea {
     gap: 2.5rem;
     align-items: center;
     min-width: 100%;
-    color: rgb(84, 92, 109);
+    color: rgb(166, 182, 218);
     font-weight: 500;
   }
   .portfolio-content img {
@@ -624,15 +617,7 @@ textarea {
     font-size: 30px;
     margin: 20px 0;
   }
-  .slider {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    height: fit-content;
-    scroll-behavior: smooth;
-    padding-bottom: 40px;
-    
-  }
+  
   .portfolio-navigation img {
     width: 36px;
     height: 36px;
@@ -663,7 +648,7 @@ textarea {
 
   }
   .contact-form {
-    transform: translateX(0px) rotateZ(0deg);
+ 
     opacity: 1;
     margin-left: 0px;
     width: 84%;
@@ -679,5 +664,96 @@ textarea {
   }
   
 
+}
+
+.portfolio-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 88%;
+  overflow-x: scroll;
+}
+
+
+.material-card {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.0) 50%);
+  width: 40%;
+  height: 45%;
+  margin: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+
+}
+
+.material-card img {
+  display: flex;
+   width: 42%;
+  border-left: 6px solid rgb(104, 140, 238);
+  opacity: 80%;
+  transform: translateX(36%) translateY(-40%) rotateZ(-45deg);
+
+}
+
+.material-info {
+  padding: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: rgb(166, 182, 218);
+  margin-right: -50px;
+ 
+
+}
+
+.material-info h3 {
+  font-size: 18px;
+  color: rgb(104, 140, 238);
+  margin-bottom: 20px;
+
+}
+
+
+@keyframes github {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+.material-info a i {
+  color: rgb(104, 140, 238);
+  text-shadow: 1px 1px 2px black;
+  animation: github 3s infinite alternate ;
+  margin: 20px 0;
+}
+
+.material-info button {
+  background: none;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(104, 140, 238);
+  color: white;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 26px;
+  transition: .1s;
+}
+.material-info button:hover{
+  background-color: rgb(128, 157, 238);
+  transition: .1s;
+} 
+.material-info a i:hover {
+  color: rgb(128, 157, 238);
 }
 
