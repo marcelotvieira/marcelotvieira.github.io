@@ -13,6 +13,14 @@
         "image": "../../tic-tac-toe/src/images/prevImage.png",
         "source": "https://marcelotvieira.github.io/tic-tac-toe/",
         "github": "https://github.com/marcelotvieira/tic-tac-toe"
+        },
+        {
+        "name": "Intro-Section",
+        "description": "Landing-page simples construída a partir de um styleGuide. Este desafio está disponível em frontendmentor.io",
+        "image": "../../intro-section/src/images/prevImage.jpg",
+        "source": "https://marcelotvieira.github.io/intro-section/",
+        "github": "https://github.com/marcelotvieira/intro-section"
         }
+       
 ]
 }

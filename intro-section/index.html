@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+      <div class="logo" id="logo">
+        <img src="src/images/logo.svg" alt="">
+      </div>
+      <div class="menu" id="menu" >
+    
+          <ul class="options" id="options">
+            <button class="menuButtonClose" id="menuButtonClose" onmousedown="toggleMenu()">
+              <span id="closeButton" class="closeButton"></span>
+            </button>
+    
+            <li class="option"><span onmousedown="expandFeatureOptions()">Features</span> <button class="expandArrow" id="expandArrow1" onmousedown="expandFeatureOptions()"></button>
+            <div class="optionsBox1" id="optionsBox1">
+              <ul class="expandedFeatureOptions" id="featureOptions">
+                <li><img src="src/images/icon-todo.svg" alt=""> Todo List</li>
+                <li><img src="src/images/icon-calendar.svg" alt=""> Calendar</li>
+                <li><img src="src/images/icon-reminders.svg" alt=""> Reminders</li>
+                <li><img src="src/images/icon-planning.svg" alt=""> Planning</li>
+              </ul>
+            </div>
+            </li>
+            <li class="option"><span onmousedown="expandCompanyOptions()" >Company</span> <button class="expandArrow" id="expandArrow2" onmousedown="expandCompanyOptions()"></button>
+              <div class="optionsBox2" id="optionsBox2">
+                <ul class="expandedCompanyOptions" id="companyOptions">
+                  <li>History</li>
+                  <li>Our Team</li>
+                  <li>Blog</li>
+
+                </ul>
+              </div></li>
+            <li class="option" id="careersOption"><span>Careers</span></li>
+            <li class="option" id="aboutOption"><span>About</span></li>
+            <div class="signButtons">
+              <button id="loginButton" class="loginButton">Login</button> <br>
+              <button id="registerButton" class="registerButton">Register</button>
+            </div>
+          </ul>
+    
+    
+        <button class="menuButton" id="menuButton" onmousedown="toggleMenu()">
+          <span id="mobileButton" class="mobileButton"></span>
+        </button>
+        </span>
+      </div>
+    </header>
+
+    <section class="content">
+      <div class="contentImage">
+        <img class="contentImage-mobile" src="src/images/image-hero-mobile.png" alt="">
+        <img class="contentImage-desktop" src="src/images/image-hero-desktop.png" alt="">
+      </div>
+
+      <div class="contentArticle">
+        <h1 class="contentTitle">Make remote work</h1>
+        <p class="contentText">Get your team in sync, no matter your location. Streamline processes create team rituals, and watch productivity soar.</p>
+        <div class="learn-button">
+          <button class="learnMoreButton">Learn more</button>
+        </div>
+        <div class="partners">
+          <div><img class="data" src="src/images/client-databiz.svg" alt=""></div>
+          <div><img class="audio" src="src/images/client-audiophile.svg" alt=""></div>
+          <div><img class="meet" src="src/images/client-meet.svg" alt=""></div>
+          <div><img class="maker" src="src/images/client-maker.svg" alt=""></div>
+        </div>
+      </div>
+      
+      
+    </section>
+
+    <footer>
+      
+    </footer>
+
+
+  
+  
+
+  <script src="src/application.js"></script>
+</body>
+</html>

@@ -67,7 +67,7 @@ function referenciaRemove(id){
         
         sourceButton.append('Visitar')
         const githubButton = document.createElement('a');
-        githubButton.href = 'https://github.com/marcelotvieira/calculator-app';
+        githubButton.href = material.github;
         githubButton.target = '_blank'
         githubButton.innerHTML = '<i class="fa-brands fa-github fa-"></i>'
         

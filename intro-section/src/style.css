@@ -1,0 +1,404 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.menuButton,
+.menuButtonClose {
+  display: flex;
+
+  font-size: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.closeButton::after,
+.closeButton::before {
+  display: block;
+  content: "";
+  border-top: 3px solid black;
+  border-radius: 1px;
+  width: 34px;
+}
+
+.closeButton::after {
+  transform: rotateZ(45deg);
+}
+
+.closeButton::before {
+  transform: translateY(3px) rotateZ(-45deg);
+}
+
+.mobileButton {
+  width: 30px;
+  border-top: 2.5px solid black;
+}
+
+.mobileButton::before,
+.mobileButton::after {
+  display: block;
+  content: "";
+  width: 30;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  margin-top: 5px;
+}
+
+.option span {
+  padding: 3px;
+  
+  width: fit-content;
+  cursor: pointer;
+}
+
+
+.expandArrow {
+  cursor: pointer;
+}
+
+.options {
+  position: fixed;
+  top: -20px;
+  right: 0px;
+  visibility: hidden;
+  height: 100vh;
+  width: 0px;
+  box-shadow: black;
+  box-shadow: -50vw 0px 30px rgba(0, 0, 0, 0.6);
+  list-style-type: none;
+  color: hsl(0, 0%, 41%);
+  font-family: "Epilogue", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 80px 30px;
+  transition: .3s;
+  opacity: 0;
+  overflow: hidden; 
+  
+}
+
+#careersOption,
+#aboutOption {
+  margin-bottom: 26px;
+  
+}
+
+
+.menu.active .options {
+  visibility: visible;
+  overflow: hidden;
+  width: 50%;
+  background-color: hsl(0, 0%, 98%);
+  transition: .3s;
+  opacity: 1;
+
+  
+
+}
+
+button {
+  cursor: pointer;
+}
+
+.closeButton {
+  width: 30px;
+  position: absolute;
+  top: 36px;
+  right: 20px;
+  background-color: none;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.menu.active .closeButton {
+  visibility: visible;
+  transition: 0.8s;
+  transform: translateX(0px) rotateZ(540deg);
+  opacity: 1;
+}
+
+.signButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signButtons button {
+  width: 100%;
+  height: 42px;
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  border-radius: 14px;
+  color: hsl(0, 0%, 41%);
+  font-weight: 700;
+  font-family: "Epilogue", sans-serif;
+  background: none;
+}
+
+.loginButton {
+  border: none !important;
+  background: none;
+}
+
+.expandArrow {
+  border: none;
+  background: none;
+  background-image: url(images/icon-arrow-down.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-repeat: none;
+  width: 8px;
+  height: 8px;
+  margin-left: 10px;
+  transform: translateY(-2px);
+  transition: .2s;
+}
+
+.expandedFeatureOptions,
+.expandedCompanyOptions {
+  margin-top: 30px;
+  list-style-type: none;
+  width: fit-content;
+}
+
+.expandedFeatureOptions li,
+.expandedCompanyOptions li {
+  cursor: pointer;
+  
+}
+
+.expandedFeatureOptions,
+.expandedCompanyOptions {
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  transition: 0.2s;
+  
+}
+
+.expandedFeatureOptions li,
+.expandedCompanyOptions li {
+  margin-bottom: 26px;
+  
+}
+
+.optionsBox1.active .expandedFeatureOptions,
+.optionsBox2.active .expandedCompanyOptions {
+  visibility: visible;
+  height: 192px;
+  transition: 0.2s;
+}
+
+.optionsBox2.active .expandedCompanyOptions {
+  height: 142px;
+}
+
+.optionsBox1.active .expandArrow {
+  transform: rotateZ(180px);
+}
+
+.expandedOptions li img {
+  margin-right: 16px;
+  width: 18px;
+}
+
+.content {
+  text-align: center;
+}
+
+.contentImage img {
+  width: 100%;
+}
+.contentImage-desktop {
+    display: none;
+}
+
+.contentArticle {
+  margin-top: 50px;
+  font-family: "Epilogue", sans-serif;
+}
+
+.contentTitle {
+  font-weight: 800;
+  font-size: 27pt;
+}
+
+.contentText {
+  padding: 0px 6px;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 500;
+  color: hsl(0, 0%, 41%);
+}
+
+.learnMoreButton {
+  margin-top: 10px;
+  width: 144px;
+  height: 50px;
+  border-radius: 16px;
+  border: none;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  font-size: 18px;
+  font-weight: 600;
+  
+}
+
+.partners {
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.learn-button {
+    text-align: center;
+}
+
+.partners img {
+  width: 80px;
+}
+
+.audio {
+  width: 56px !important;
+}
+
+@media (min-width: 900px) {
+    header {
+        justify-content:flex-start;
+        padding-top: 30px;
+    }
+    .content {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 50px;
+    }
+    .contentImage-mobile {
+        display: none;
+    }
+    .contentImage-desktop {
+
+        display: block;
+        margin-top: 40px;
+        min-width: 470px;
+        max-width: 500px;
+    }
+    .content {
+        text-align: left;
+        
+    }
+    .contentTitle {
+        font-size: 52pt;
+        min-width: 470px;
+        max-width: 560px;
+
+    }
+    .contentText {
+        min-width: 470px;
+        max-width: 560px;
+
+    }
+    .mobileButton {
+        display: none;
+    }
+    .options {
+      
+        visibility: visible;
+        display: flex;
+        align-items: center;
+        position: unset;
+        margin: auto;
+        height: fit-content;
+        width: fit-content;
+        box-shadow: none;
+        padding: 0px 0px;
+        opacity: 1;
+
+
+    }
+    .signButtons {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        top: 24px;
+        right: 50px;
+    }
+    .signButtons button {
+        background: none;
+        font-size: 18px;
+        font-weight: 500;
+        width: 120px;
+        height: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.6);
+    }
+    .signButtons button:hover {
+        color: hsl(0, 0%, 8%);
+        border: 2.5px solid hsl(0, 0%, 8%);
+    }
+    .registerButton {
+       width: 0%;
+       height: 80px;
+    }
+    .option {
+        margin: 0;
+    }
+    .expandedFeatureOptions,
+    .expandedCompanyOptions
+    {
+    margin-top: 0px;
+    }
+    .option:hover {
+        color: hsl(0, 0%, 8%);
+    }
+    #careersOption,
+    #aboutOption {
+        margin-left: 0px;
+        margin-bottom: 0px;
+
+    }
+    #careersOption:hover,
+    #aboutOption:hover {
+        color: hsl(0, 0%, 8%);
+        
+    }
+    .options {
+        margin-left: 100px;
+        
+    }
+    .expandArrow {
+        width: 16px;
+        height: 16px;
+        
+    }
+    .expandedFeatureOptions, .expandedCompanyOptions {
+        transition: none;
+    }
+    .optionsBox1.active .expandedFeatureOptions,
+    .optionsBox2.active .expandedCompanyOptions {
+        position: absolute;
+        top: 80px;
+        border-radius: 10px;
+        background-color: hsl(0, 0%, 100%);
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+        z-index: 10;
+        padding: 30px;
+
+    }
+    .option  {
+        width: 200px;
+    }
+
+
+}
