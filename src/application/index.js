@@ -38,15 +38,24 @@ function referenciaRemove(id){
     page.classList.remove('active');
 }
 
+const materials = [
+    {
+        "name": "Calculator",
+        "description": "Uma calculadora com suporte a mouse e teclado, e um switcher para alterar o tema. Este desafio está disponível em frontendmentor.io",
+        "image": "../../calculator/images/prevImage.jpg",
+        "source": "https://marcelotvieira.github.io/calculator/",
+        "github": "https://github.com/marcelotvieira/calculator-app"
+        },
+    {
+        "name": "Tic-Tac-Toe",
+        "description": "Tradicional jogo da velha, possui um placar para contagem de vitórias.",
+        "image": "../../tic-tac-toe/src/images/prevImage.png",
+        "source": "https://marcelotvieira.github.io/tic-tac-toe/",
+        "github": "https://github.com/marcelotvieira/tic-tac-toe"
+        }
+    ]
+console.log(materials)
 
-
-
-    const materials = fetch("../../data/materials.json")
-  .then((resposta) => {
-    return resposta.json();
-  })
-  .then((jsonData) => {
-    let materials = jsonData.materials;
     for (let material of materials) {
         const card = document.createElement('div');
         card.className = 'material-card';
@@ -83,7 +92,7 @@ function referenciaRemove(id){
 
     }
 
-  })
+  
 
 
 
