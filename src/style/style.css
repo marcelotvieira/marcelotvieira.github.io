@@ -556,6 +556,7 @@ textarea {
     padding: 30px;
     border-right: none;
   }
+
   .menu {
     display: none;
   }
@@ -589,11 +590,11 @@ textarea {
     font-weight: 500;
   }
   .portfolio-container {
-    height: 700px!important;
+    height: 740px!important;
   }
   .material-card {
     width: 100%!important;
-    height: 310px!important;
+    height: 330px!important;
   }
   .portfolio-content img {
     margin: 15px 0;
