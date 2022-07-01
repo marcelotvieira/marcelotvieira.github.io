@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  background-color: hsl(226, 43%, 10%);
+}
+.credits {
+    text-align: center;
+    color: hsl(235, 45%, 61%);
+    font-size: 12px;
+}
+.credits a {
+    text-decoration: none;
+    color: hsl(236, 100%, 87%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.user {
+  color: white;
+  width: 90%;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.user-header {
+  display: flex;
+  background-color: hsl(246, 80%, 60%);
+  padding: 34px 30px;
+  border-radius: 14px;
+}
+
+.user-info {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.user-header h2 {
+  color: rgb(223, 232, 245);
+  font-weight: 100;
+  margin-top: 6px;
+}
+
+.user-header p {
+  font-size: 16px;
+  color: hsl(236, 100%, 87%);
+}
+
+.user-header img {
+  width: 24%;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.period-tabs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.tab label {
+  color: hsl(235, 45%, 61%);
+}
+
+.tab label:hover {
+  color: hsl(240, 24%, 96%);
+}
+
+.frame-container {
+  width: 100%;
+}
+
+.time-frames {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame {
+  margin-top: 30px;
+  width: 90%;
+  background-size: 84px;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+#frame0 {
+  background-color: hsl(15, 100%, 70%);
+  background-image: url(images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position: 94% -8%;
+}
+
+#frame1 {
+  background-color: hsl(195, 74%, 62%);
+  background-image: url(images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: 94% -6%;
+}
+
+#frame2 {
+  background-color: hsl(348, 100%, 68%);
+  background-image: url(images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position: 94% -10%;
+}
+
+#frame3 {
+  background-color: hsl(145, 58%, 55%);
+  background-image: url(images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position: 94% -0%;
+}
+
+#frame4 {
+  background-color: hsl(264, 64%, 52%);
+  background-image: url(images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position: 94% -14%;
+}
+
+#frame5 {
+  background-color: hsl(43, 84%, 65%);
+  background-image: url(images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position: 94% -10%;
+}
+
+.frame-header {
+  height: 46px;
+}
+
+.frame-content {
+  background-image: linear-gradient(hsl(235, 46%, 20%), hsl(235, 46%, 20%));
+  border-radius: 14px;
+  padding: 36px 30px;
+  color: rgb(223, 232, 245);
+}
+
+.frame-content:hover {
+  background-color: none;
+  background-image: linear-gradient(
+    35deg,
+    hsla(236, 45%, 20%, 0.8),
+    hsla(236, 45%, 20%, 0.2)
+  );
+}
+
+.frame-content div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.frame-content img {
+  height: 6px;
+}
+
+.frame-content label {
+  color: rgb(223, 232, 245);
+  font-weight: 500;
+}
+
+.frame-content span {
+  font-size: 36px;
+  font-weight: 100;
+}
+
+.frame-bottom {
+  margin-top: 10px;
+  align-items: center;
+}
+
+.frame-bottom p {
+  color: hsl(236, 100%, 87%);
+  font-size: 16px;
+}
+
+.period-tab {
+  width: 100px;
+  height: 30px;
+  display: flex;
+  appearance: none;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.tab label {
+  margin-top: -25px;
+}
+
+@media (min-width: 720px) {
+  .container {
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1100px;
+  }
+
+  .frame {
+    max-width: 260px;
+    margin: 14px;
+  }
+
+  .frame-bottom {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .frame-bottom p {
+    margin-top: 10px;
+  }
+
+  .user {
+    width: 260px;
+  }
+
+  .user-header {
+    display: block;
+  }
+
+  .user-header img {
+    width: 70px;
+  }
+
+  .user-info {
+    margin: 40px 0px;
+  }
+
+  .user-info h2 {
+    font-size: 36px;
+  }
+
+  .time-frames {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .period-tabs {
+    display: block;
+    height: fit-content;
+    padding: 30px;
+  }
+
+  .tab {
+    text-align: left;
+    margin: 8px 0px;
+  }
+}

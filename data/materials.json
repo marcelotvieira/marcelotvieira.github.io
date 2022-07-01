@@ -20,7 +20,14 @@
         "image": "../../intro-section/src/images/prevImage.jpg",
         "source": "https://marcelotvieira.github.io/intro-section/",
         "github": "https://github.com/marcelotvieira/intro-section"
-        }
+        },
+        {
+        "name": "Time-Tracker",
+        "description": "Um pequeno Dashboard trabalhando com horas. Este desafio está disponível em frontendmentor.io",
+        "image": "../../time-tracker/src/images/prevImage.jpg",
+        "source": "https://marcelotvieira.github.io/time-tracker/",
+        "github": "https://github.com/marcelotvieira/time-tracker"
+            }
        
 ]
 }

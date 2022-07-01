@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="user">
+        <div class="user-header">
+          <img src="src/images/image-jeremy.png" alt="" />
+          <div class="user-info">
+            <p>Report for</p>
+            <h2>Jeremy Robson</h2>
+          </div>
+        </div>
+        <div class="period-tabs">
+          <div class="tab">
+            <input
+              type="radio"
+              onclick="dados()"
+              class="period-tab"
+              id="period"
+              name="period"
+              value="daily"
+            />
+            <label id="daily" for="">Daily</label>
+          </div>
+
+          <div class="tab">
+            <input
+              type="radio"
+              onclick="dados()"
+              class="period-tab"
+              checked="checked"
+              id="period"
+              name="period"
+              value="weekly"
+            />
+            <label id="weekly" for="">Weekly</label>
+          </div>
+          <div class="tab">
+            <input
+              type="radio"
+              onclick="dados()"
+              class="period-tab"
+              id="period"
+              name="period"
+              value="monthly"
+            />
+            <label id="monthly" for="">Monthly</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="frame-container">
+        <ul class="time-frames" id="time-frames"></ul>
+      </div>
+    </div>
+    <div class="credits">
+      <p>Developed by<a href="#">© Marcelo Vieira</a> | 2022</p>
+    </div>
+
+    <script src="src/application.js"></script>
+  </body>
+</html>
