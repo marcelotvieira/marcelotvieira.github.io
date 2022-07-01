@@ -556,6 +556,12 @@ textarea {
     padding: 30px;
     border-right: none;
   }
+  .portfolio-card {
+    height: 320px!important;
+  }
+  .portfolio-container {
+    height: 720px!important;
+  }
   .menu {
     display: none;
   }
