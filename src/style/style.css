@@ -470,7 +470,7 @@ textarea {
   margin: 10px 0;
   list-style-type: circle;
   color: rgb(166, 182, 218);
-  border-bottom: 4px dotted rgb(159, 180, 240);
+  border-bottom: 4px dotted rgba(159, 181, 240, 0.2);
 }
 
 .tecnologias i {
