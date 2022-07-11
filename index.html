@@ -15,6 +15,9 @@
 
 </head>
 <body>
+    <div class="loading">
+        <span class="loading-animation"><span class="loading-box"></span></span>
+    </div>
     <div class="container">
         <header>
             <div class="photo"><img src="src/images/WhatsApp Image 2022-05-27 at 11.42.13.jpeg" alt="">
@@ -37,14 +40,14 @@
                 <ul class="socials">
                     <li><a href="https://www.linkedin.com/in/marcelovieir4/"><i class="fa-brands fa-linkedin fa-lg"></i></a></li>
                     <li><a href="https://github.com/marcelotvieira"><i class="fa-brands fa-github fa-lg"></i></a></li>
-                    <li><a href="https://api.whatsapp.com/send?phone=5531999393313&text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20da%20sua%20p%C3%A1gina%20no%20Github!"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=5531999393313&text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20da%20sua%20p%C3%A1gina%20no%20Github!"><i class="fa-brands fa-whatsapp fa-lg"></i></a></li>
                 </ul>
                 <p>Belo Horizonte - Minas Gerais - Brasil</p>
             </div>
         </header>
         <section class="page">
             <div onmouseenter="referenciaAdd(id)" onmouseleave="referenciaRemove(id)" class="home-page" id="home-page">
-                <h1>Olá!</h1>
+                <h1 class="title">Olá!</h1>
                 <h2>Eu sou Marcelo Vieira, </h2>
                 <p>e sou estudante de desenvolvimento Web</p>
                 <div class="home-content">
@@ -66,9 +69,8 @@
                     <h1>Portfólio</h1>
                 </div>
                 <div class="portfolio-container" id="portfolio-container">
-                    
+                   
                 </div>
-
 
                 </div>
                 <div  onmouseenter="referenciaAdd(id)" onmouseleave="referenciaRemove(id)"   class="conteudo-page" id="conteudo-page">
@@ -82,10 +84,8 @@
                            <li>Práticas mais utilizadas num real ambiente de trabalho.</li>
                        </ul></li>
                        <li><i class="fa-brands fa-html5 fa-2x"></i> <br><ul>
-
                                <li>Marcação Semântica</li>
                                <li>DOM</li>
-
                        </ul></li>
                        <li><i class="fa-brands fa-css3-alt fa-2x"></i> <br><ul>
                            <li>Estilização com classes.</li> <li>Aproveitamento de código</li>
@@ -122,15 +122,9 @@
                        
                     
                 </div>
-                
-                
             </div>
-            
-
         </section>
-        
     </div>
-    
     <script src="https://kit.fontawesome.com/30ba7089ff.js" crossorigin="anonymous"></script>
     <script src="src/application/index.js"></script>
 </body>

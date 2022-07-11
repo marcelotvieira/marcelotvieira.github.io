@@ -27,6 +27,7 @@ body {
   filter: drop-shadow(0px 0px 10px rgba(47, 111, 128, 0.4));
   border: 1px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
+  animation: containeranimation 5s;
 }
 
 .page {
@@ -324,13 +325,22 @@ textarea {
   color: white;
   font-weight: 700;
   border-radius: 8px;
-  transition: 0.3s;
+  transition: 0.1s;
+}
+i:hover {
+  color: rgb(157, 181, 247);
+  transition: .1s;
+}
+i {
+  height: 30px;
+  transition: .1s;
+  box-sizing: border-box
 }
 
 .contact-form button:hover {
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  background-color: rgb(138, 167, 245);
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
-  transition: 0.6s;
+  transition: 0.1s;
 }
 
 .portfolio-content {
@@ -359,7 +369,6 @@ textarea {
   background-color: rgb(104, 140, 238);
   border-radius: 12px;
   border: 7px solid rgb(16, 24, 37);
-
 }
 
 .component-info {
@@ -398,18 +407,14 @@ textarea {
   display: flex;
   gap: 2rem;
   justify-content: center;
-
   height: 10%;
   border-radius: 40px;
 }
 
-
 .title h1 {
   color: rgb(104, 140, 238);
-
   font-size: 44px;
 }
-
 .portfolio-content img {
   width: 200px;
   border: 6px solid rgb(47, 70, 88);
@@ -422,17 +427,14 @@ textarea {
   animation: graphics-animation 3s infinite alternate;
   transition: 0.5s;
 }
-
 @keyframes graphics-animation {
   0% {
     transform: perspective(50px) translateX(40px) rotateZ(-6deg) rotateY(2deg);
   }
-
   100% {
     transform: perspective(42px) translateX(46px) rotateZ(-5deg) rotateY(2deg);
   }
 }
-
 #comment-view {
   width: 200px;
   border-radius: 14px;
@@ -440,7 +442,6 @@ textarea {
   transform: perspective(50px) translateX(40px) rotateZ(-6deg) rotateY(2deg);
   height: 360px;
 }
-
 .tecnologias {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -459,12 +460,10 @@ textarea {
   );
   padding: 30px;
 }
-
 .tecnologias li {
   width: 300px;
   color: rgb(104, 140, 238);
 }
-
 .tecnologias li ul li {
   border: none;
   margin: 10px 0;
@@ -472,21 +471,15 @@ textarea {
   color: rgb(166, 182, 218);
   border-bottom: 4px dotted rgba(159, 181, 240, 0.2);
 }
-
 .tecnologias i {
   margin-bottom: 40px;
 }
-
 .hobbies {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
     transform: translateX(0px) perspective(40px) rotateY(2deg) rotateX(3deg);
     margin-left: 30px;
-}
-
-.hobbie-section {
-
 }
 
 .sobre-page {
@@ -501,7 +494,6 @@ textarea {
     color: rgb(166, 182, 218);
     margin: 40px 0;
 }
-
 .hobbie {
     width: 100%;
     height: 150px;
@@ -511,17 +503,13 @@ textarea {
     transform: perspective(30px) rotateZ(2deg) rotateX(2deg) rotateY(-3deg);
     margin: 20px;
     margin-right: -58px;
-
-    
 }
 .sobre-content {
   max-width: 700px;
-
 }
 .hobbie-section {
   display: flex;
   justify-content: space-around;
-  
 
 }
 .hobbie-section p {
@@ -529,9 +517,7 @@ textarea {
 }
 @media (max-width: 1100px) {
  
-
 }
-
 
 @media (max-width: 768px) {
   .container {
@@ -658,7 +644,6 @@ textarea {
     display: block;
   }
   
-
 }
 
 .portfolio-container {
@@ -682,6 +667,17 @@ textarea {
   border-radius: 8px;
   overflow: hidden;
   display: flex;
+  transition: .3s;
+  
+
+}
+.material-card:hover {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  transition: .3s;
+}
+.material-card:hover img {
+  transform: translateX(28%) translateY(-0%) rotateZ(-0deg);
+  transition: .6s;
 
 }
 
@@ -691,6 +687,7 @@ textarea {
   border-left: 6px solid rgb(104, 140, 238);
   opacity: 80%;
   transform: translateX(36%) translateY(-40%) rotateZ(-45deg);
+  transition: .5s;
 
 }
 
@@ -752,3 +749,87 @@ textarea {
   color: rgb(128, 157, 238);
 }
 
+
+.loading {
+  background-color: rgb(33, 43, 56);
+  width: 100%;
+
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  perspective: 300px;
+  animation: closeloading 4s;
+  visibility: hidden;
+}
+
+.loading-animation {
+  width: 100px;
+  height: 100px;
+  content: '';
+  display: block;
+  background: linear-gradient(rgb(104, 140, 238), rgba(167, 202, 248, 0.05) 50%);
+  border-radius: 50%;
+  padding: .1rem;
+  animation: loading 4s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+.loading-box {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  content: '';
+  display: block;
+  background: radial-gradient(rgb(33, 43, 56) 40%, rgba(255, 255, 255, 0));
+  box-sizing: border-box;
+  transition: .4s;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotateZ(0deg);
+    opacity: 0;
+  }
+  50% {
+
+    transform: rotateZ(360deg);
+  }
+  75% {
+    transform: rotateZ(-100deg);
+    width: 100px;
+    height: 100px;
+  }
+  100% {
+    tranform: rotateZ(0deg);
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+  }
+}
+
+@keyframes closeloading {
+  0% {
+    visibility: visible;
+  }
+  90% { 
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes containeranimation {
+  80%{
+   opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
