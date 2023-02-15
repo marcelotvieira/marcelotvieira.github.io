@@ -22,7 +22,6 @@ const ContentCard = ({ content }) => {
     ];
 
     const { tags, name, description, image, repository, source } = content;
-
     const thisStacks = stacks.filter((stack) => {
         if (tags.includes(stack.name)) return stack;
         return null;
