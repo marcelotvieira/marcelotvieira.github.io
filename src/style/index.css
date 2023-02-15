@@ -766,7 +766,7 @@ i:hover {
   box-sizing: border-box;
   padding: 1rem;
   padding-top: 0;
-  min-width: 26rem;
+  min-width: 20rem;
 }
 .content-detail .content-detail-info p {
   max-width: 40rem;
