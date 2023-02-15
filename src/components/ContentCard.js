@@ -25,9 +25,10 @@ const ContentCard = ({ content }) => {
 
     const thisStacks = stacks.filter((stack) => {
         if (tags.includes(stack.name)) return stack;
+        return null;
     });
 
-    const { location, visibleContent, handleNavigate } = useContext(animateContext)
+    const { location, handleNavigate } = useContext(animateContext)
 
     const { pathname } = useLocation();
 

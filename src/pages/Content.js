@@ -19,6 +19,7 @@ const Content = () => {
         setFilteredContent(content.filter((item) => {
             if (currTab === '') return item;
             if (item.tags.includes(currTab)) return item;
+            return null;
         }))
     }, [currTab])
 

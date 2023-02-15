@@ -15,7 +15,7 @@ const App = () => {
 
     return (
         <div className={ isLightMode ? 'container light' : 'container'} >
-            <BrowserRouter>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
             <AnimateProvider>
                 <Header isLightMode={isLightMode} setLightMode={setLightMode} />
                         <Switch>

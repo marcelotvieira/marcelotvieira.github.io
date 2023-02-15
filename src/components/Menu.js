@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import animateContext from '../context/animateContext';
-import { Link } from 'react-router-dom';
 
 const Menu = ({ isLightMode, setLightMode }) => {
     const { handleNavigate } = useContext(animateContext);

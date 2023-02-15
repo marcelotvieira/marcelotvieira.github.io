@@ -6,7 +6,7 @@ import ContactForm from '../components/ContactForm';
 import { contacts } from '../data';
 
 const Contact = () => {
-    const { location, visibleContent, handleNavigate } = useContext(animateContext)
+    const { location, visibleContent } = useContext(animateContext)
 
     const { pathname } = useLocation();
 
