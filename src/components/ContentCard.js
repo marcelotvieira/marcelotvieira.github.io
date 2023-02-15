@@ -29,9 +29,7 @@ const ContentCard = ({ content }) => {
     });
 
     const { location, handleNavigate } = useContext(animateContext)
-
     const { pathname } = useLocation();
-
 
     if (pathname !== location) return <Redirect to={location} />
     return (
