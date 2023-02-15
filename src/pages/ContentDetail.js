@@ -66,18 +66,10 @@ function ContentDetail({ match }) {
 
                     <div className="content-detail-info">
                         <h2 className="title">{data.name}</h2>
-                        <p>{data.descriptionDetails}</p>
+                        <p>{data.description}</p>
                         <ul>
                             {data.usedStacks.map((stack) => (
                                 <div>
-                                    <li>
-                                        <h3>{stack.name}</h3>
-                                        <p>{stack.usedTo}</p>
-                                    </li>
-                                    <li>
-                                        <h3>{stack.name}</h3>
-                                        <p>{stack.usedTo}</p>
-                                    </li>
                                     <li>
                                         <h3>{stack.name}</h3>
                                         <p>{stack.usedTo}</p>
