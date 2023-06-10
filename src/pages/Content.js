@@ -48,7 +48,7 @@ const Content = () => {
                         </div>
                         <div>
                             <button
-                                name={`/contact`}
+                                name={`/about`}
                                 onClick={handleNavigate}
                                 type="button">
                             </button>
