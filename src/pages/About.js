@@ -36,14 +36,14 @@ const About = () => {
                             <div>
                                 <i className="fa-regular fa-circle-left fa-3x" />
                                 <button
-                                    name={`/`}
+                                    name={`/content`}
                                     onClick={handleNavigate}
                                     type="button">
                                 </button>
                             </div>
                             <div>
                                 <button
-                                    name={`/skills`}
+                                    name={`/contact`}
                                     onClick={handleNavigate}
                                     type="button">
                                 </button>

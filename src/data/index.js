@@ -30,12 +30,21 @@ const skills = [
         ]
     },
     {
+        name: 'Arquiteturas',
+        image: require('../images/software-architecture.png'),
+        subTitles: [
+            'MSC',
+            'MVC',
+        ]
+    },
+    {
         name: 'React JS',
         image: require('../images/react.png'),
         subTitles: [
             'Class Components',
             'Functional Components',
-            'Context & Hooks'
+            'Context & Hooks',
+            'AntDesign',
         ]
     },
     {
@@ -58,12 +67,15 @@ const skills = [
         image: require('../images/css.png'),
         subTitles: [
             'SASS',
+            'Styled-components',
         ]
     },
     {
-        name: 'Side Skills',
+        name: 'Other Skills',
         image: require('../images/side.png'),
         subTitles: [
+            'POO',
+            'SOLID',
             'Github',
             'Bash',
             'Kanban'
@@ -364,6 +376,72 @@ const content = [
             'teste',
             'node',
             'mysql',
+        ]
+    },
+    {
+        id :12,
+        name: 'Engineering Project Manager',
+        image: require('../images/logo.png'),
+        description: 'Projeto desenvolvido individualmente. Trata-se de uma simples API para gestão de projetos de um projetista estrutural. Realizado um CRUD em banco de dados relacional',
+        source: 'git@github.com:marcelotvieira/management-dashboard.git',
+        usedStacks: [
+            {
+                name: 'Express',
+                usedTo: 'A api utiliza um servidor Express',
+            },
+            {
+                name: 'MongoDB',
+                usedTo: 'A aplicação realiza um CRUD em um banco de dados não relacional MongoDB.',
+            },
+            {
+                name: 'Docker',
+                usedTo: 'Tanto o servidor backend, quanto o banco de dados rodam sobre contêineres docker',
+            },
+            {
+                name: 'Prisma',
+                usedTo: 'O prisma é utilizado como ORM, na criação de modelos e tipos.'
+            }
+        ],
+        repository: 'git@github.com:marcelotvieira/management-dashboard.git',
+        tags: [
+            'estudo',
+            'mongo',
+            'node',
+            'prisma',
+            'typescript'
+        ]
+    },
+    {
+        id :13,
+        name: 'Engineering Projects Manager WebApp',
+        image: require('../images/logo.png'),
+        description: 'Projeto desenvolvido individualmente. Trata-se de uma simples aplicação frontend construída em React, que interage com uma api realizado um CRUD em banco de dados MongoDB',
+        source: 'https://github.com/marcelotvieira/management-dashboard-ReactApp',
+        usedStacks: [
+            {
+                name: 'React',
+                usedTo: 'Utilizado na construção de páginas e componentes',
+            },
+            {
+                name: 'API',
+                usedTo: 'A aplicação consome de uma API presente no meu portfólio.',
+            },
+            {
+                name: 'SASS',
+                usedTo: 'O estilo da aplicação foi construído utilizando o Motor CSS SASS',
+            },
+            {
+                name: 'AntDesign',
+                usedTo: 'A aplicação faz uso de alguns componentes do UI Kit AntDesign'
+            },
+        ],
+        repository: 'https://github.com/marcelotvieira/management-dashboard-ReactApp',
+        tags: [
+            'estudo',
+            'react',
+            'css',
+            'sass',
+            'typescript'
         ]
     },
 ]

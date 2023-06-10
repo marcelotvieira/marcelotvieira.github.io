@@ -12,10 +12,6 @@ function ContentDetail({ match }) {
 
     const data = content.find((project) => project.id === Number(match.params.id));
 
-
-
-
-
     if (match.url !== location) return <Redirect to={location} />
     return <div>
         <Animated

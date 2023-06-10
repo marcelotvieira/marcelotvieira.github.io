@@ -14,7 +14,7 @@
 }
 .container.light .about p {
   border: 1px solid rgba(0, 0, 0, 0.08);
-  color: #828282;
+  color: #121212;
 }
 .container.light .presentation-box img {
   border: 0.5rem solid #006eb2;
@@ -72,7 +72,8 @@
 .container.light .contact-form form h4 {
   color: #828282;
 }
-.container.light .contact-form form input, .container.light .contact-form form textarea {
+.container.light .contact-form form input,
+.container.light .contact-form form textarea {
   border: 1px solid rgba(0, 0, 0, 0.08);
   color: #828282;
 }
@@ -108,7 +109,7 @@
   filter: invert(0%);
 }
 .container.light h3 {
-  color: #7d7d7d;
+  color: #121212;
 }
 .container.light .tabs button {
   color: #828282 !important;
@@ -120,14 +121,14 @@
   color: #006eb2 !important;
 }
 .container.light .content-card {
+  background-color: rgb(250, 250, 250) !important;
   filter: invert(0%);
-  border: 1px solid rgba(0, 0, 0, 0.08) !important;
 }
 .container.light .content-card h3 {
   color: #828282 !important;
 }
 .container.light .title {
-  color: #828282 !important;
+  color: #121212 !important;
 }
 .container.light .menu i {
   color: #006eb2;
@@ -138,27 +139,38 @@
 .container.light .menu .menu-item:hover {
   color: #006eb2;
 }
-.container.light .about .navigate i, .container.light .skills .navigate i, .container.light .content .navigate i {
+.container.light .about .navigate i,
+.container.light .skills .navigate i,
+.container.light .content .navigate i {
   color: #006eb2;
 }
-.container.light .about .canva-bicicleta, .container.light .skills .canva-bicicleta, .container.light .content .canva-bicicleta {
+.container.light .about .canva-bicicleta,
+.container.light .skills .canva-bicicleta,
+.container.light .content .canva-bicicleta {
   filter: invert(100%);
 }
-.container.light .skills .title, .container.light .content .title {
+.container.light .skills .title,
+.container.light .content .title {
   color: #828282;
 }
-.container.light .skills .skill-card, .container.light .content .skill-card {
-  background-color: #ededed;
+.container.light .skills .skill-card,
+.container.light .content .skill-card {
+  background-color: rgb(250, 250, 250);
+  border-radius: 0.8rem;
   color: #121212;
-  border: 1px solid rgba(0, 0, 0, 0.08);
 }
-.container.light .skills .skill-card h3, .container.light .content .skill-card h3 {
+.container.light .skills .skill-card h3,
+.container.light .content .skill-card h3 {
   color: #7d7d7d;
+  font-size: 14px;
+  color: #121212;
 }
-.container.light .skills .skill-card .skill-icon, .container.light .content .skill-card .skill-icon {
+.container.light .skills .skill-card .skill-icon,
+.container.light .content .skill-card .skill-icon {
   filter: invert(0%);
 }
-.container.light .skills .skill-card ul, .container.light .content .skill-card ul {
+.container.light .skills .skill-card ul,
+.container.light .content .skill-card ul {
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   color: #006eb2;
 }
@@ -293,11 +305,13 @@ i:hover {
 .greeting h1 {
   font-size: 4rem;
 }
-.greeting h2, .greeting span {
+.greeting h2,
+.greeting span {
   font-size: 2.5rem;
   font-weight: 700;
 }
-.greeting span, .greeting i {
+.greeting span,
+.greeting i {
   color: #FF914D;
 }
 
@@ -322,7 +336,8 @@ i:hover {
   width: 100%;
   float: right;
 }
-.about .left, .about .right {
+.about .left,
+.about .right {
   width: 40%;
   min-width: 28rem;
 }
@@ -369,21 +384,23 @@ i:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: auto;
+  margin: 1rem auto;
   width: 70%;
-  max-width: 1000px;
 }
 .skills .skills-container .skill-card {
   padding: 2rem;
   min-width: 9rem;
   max-width: 9rem;
-  min-height: 11rem;
-  margin: 0.5rem;
-  background: #121212;
+  min-height: 12rem;
+  margin: 1rem 0.5rem;
+  background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.8rem;
+  transition: 0.2s;
 }
 .skills .skills-container .skill-card:hover {
-  transform: scale(1.04);
+  transform: translateY(-3px);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 .skills .skills-container .skill-card h3 {
   margin-top: -2rem;
@@ -399,11 +416,11 @@ i:hover {
   list-style: circle;
 }
 .skills .skills-container .skill-card .skill-icon {
-  max-width: 3.2rem;
-  height: 3.2rem;
+  max-width: 2.8rem;
+  height: 2.8rem;
   margin: auto;
   display: flex;
-  transform: translateY(-4rem);
+  transform: translateY(-3.5rem);
 }
 
 .content {
@@ -416,7 +433,7 @@ i:hover {
 }
 .content .portfolio-container {
   margin: 1rem;
-  width: 59%;
+  width: 70%;
 }
 .content .portfolio-container h3 {
   margin: 1rem 2rem;
@@ -448,19 +465,21 @@ i:hover {
 .content .portfolio-container .content-box {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   overflow: hidden;
   margin: 0.5rem;
   padding: 1rem 0;
 }
 .content .portfolio-container .content-box .content-card {
+  background-color: rgba(255, 255, 255, 0.03);
   max-width: 12rem;
+  border-radius: 0.8rem;
   min-width: 12rem;
   transition: 0.2s;
-  border: 1px solid rgba(255, 255, 255, 0.08);
   padding: 0.5rem 0.5rem 0 0.5rem;
   min-width: 10rem;
   min-height: 12rem;
-  margin: 0.5rem 0.25rem;
+  margin: 0.7rem 0.4rem;
 }
 .content .portfolio-container .content-box .content-card button {
   border: none;
@@ -468,7 +487,8 @@ i:hover {
   cursor: pointer;
 }
 .content .portfolio-container .content-box .content-card h3 {
-  font-size: 1rem;
+  font-size: 14px;
+  height: 2.5rem;
   text-align: center;
   margin: 0.5rem;
 }
@@ -520,6 +540,7 @@ i:hover {
 }
 .content .portfolio-container .content-box .content-card:hover {
   transform: translateY(-0.2rem);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 .content .portfolio-container .content-box .content-card:hover .source-buttons {
   opacity: 1;
@@ -584,7 +605,8 @@ i:hover {
   flex-direction: column;
   align-items: center;
 }
-.contact form input, .contact form textarea {
+.contact form input,
+.contact form textarea {
   outline: none;
   border-radius: 0.2rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -651,6 +673,7 @@ i:hover {
   .portfolio-container h3 {
     font-size: 1rem;
     text-align: center;
+    color: white;
   }
   .navigate i {
     font-size: 2rem;
@@ -688,7 +711,8 @@ i:hover {
   .about {
     flex-direction: column-reverse;
   }
-  .about .left, .about .right {
+  .about .left,
+  .about .right {
     min-width: unset;
     width: 90%;
   }

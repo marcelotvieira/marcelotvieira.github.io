@@ -125,7 +125,7 @@ const Content = () => {
                         <div className="content-box">
                             {filteredContent.map((item, index) => (
                                 <ContentCard key={index} content={item} />
-                            ))}
+                            )).reverse()}
                         </div>
                     </div>
                 </div>

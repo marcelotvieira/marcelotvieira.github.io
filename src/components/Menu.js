@@ -6,9 +6,9 @@ const Menu = ({ isLightMode, setLightMode }) => {
 
     const items = [
         { name: 'Home', path: '/', icon: <i className="fa-solid fa-house-user" /> },
-        { name: 'Sobre', path: '/about', icon: <i className="fa-solid fa-user" /> },
         { name: 'Habilidades', path: '/skills', icon: <i className="fa-solid fa-list" /> },
         { name: 'Portfólio', path: '/content', icon: <i className="fa-solid fa-paperclip" /> },
+        { name: 'Sobre', path: '/about', icon: <i className="fa-solid fa-user" /> },
         { name: 'Contatos', path: '/contact', icon: <i className="fa-solid fa-address-book" /> },
     ]
     return (

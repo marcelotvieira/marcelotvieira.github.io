@@ -20,7 +20,7 @@ const Greeting = () => {
                     <div className="navigate">
                     <div>
                         <button
-                            name={`/about`}
+                            name={`/skills`}
                             onClick={handleNavigate}
                             type="button">
                         </button>

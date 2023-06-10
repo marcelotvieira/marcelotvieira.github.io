@@ -11,7 +11,7 @@ import Content from './pages/Content';
 import Contact from './pages/Contact';
 
 const App = () => {
-    const [isLightMode, setLightMode] = useState(false);
+    const [isLightMode, setLightMode] = useState(true);
 
     return (
         <div className={ isLightMode ? 'container light' : 'container'} >

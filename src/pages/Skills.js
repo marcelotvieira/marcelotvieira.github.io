@@ -23,13 +23,13 @@ const Skills = () => {
     >
         <div className="page">
         <div className="skills">
-        <h2 className="title">Skills</h2>
+        <h2 className="title">Habilidades</h2>
 
         <div className="navigate">
                     <div>
                         <i className="fa-regular fa-circle-left fa-3x" />
                         <button
-                            name={`/about`}
+                            name={`/`}
                             onClick={handleNavigate}
                             type="button">
                         </button>
