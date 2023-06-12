@@ -787,7 +787,7 @@ i {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 
     .container {
         &.light {
@@ -884,7 +884,7 @@ i {
         }
 
         .avatar {
-            max-width: 16rem !important;
+            max-width: 18rem !important;
         }
     }
 

@@ -633,7 +633,7 @@ i:hover {
   color: #121212;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .container.light .menu {
     background-color: #ededed;
   }
@@ -706,7 +706,7 @@ i:hover {
     font-size: 1.5rem;
   }
   .greeting .avatar {
-    max-width: 16rem !important;
+    max-width: 18rem !important;
   }
   .about {
     flex-direction: column-reverse;
