@@ -325,7 +325,7 @@ i:hover {
   gap: 1rem;
 }
 .about p {
-  max-width: 50rem;
+  max-width: 40rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
   color: #949494;
   padding: 2rem;

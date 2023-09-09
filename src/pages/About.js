@@ -53,18 +53,18 @@ const About = () => {
                 <div className="about">
                     <div className="left">
                                         
-                        <p>Eu sou nascido em 1995, e como toda criança na época, eu jogava futebol na rua, andava de skate e bicicleta, assim como demais atividades típicas da idade.
+                        <p>Eu sou nascido em 1995, e como toda criança na época, eu jogava futebol na rua, andava de bicicleta, assim como demais atividades típicas da idade.
 
                             <br />
                             <br />
-                             Em paralelo, eu estudava, por influência da família, em uma escola de música local onde por 2 anos toquei instrumentos de sopro junto da banda, em apresentações dentro e fora da cidade, e por 3 anos acompanhei a orquestra da mesma instituição tocando Violoncelo.
-
+                             Em paralelo, eu estudava, em uma escola de música local onde por 1 anos toquei instrumentos de sopro junto da tradicionalíssima banda, e por mais 1 anos com a orquestra da mesma instituição.
                             <br/>
                             <br/>
-                            Desde os meus 11 anos de idade, durante boas horas do meu dia eu estava em frente a um computador, inicialmente fascinado com jogos, para então 10 anos depois eu dar início aos meus estudos, utilizando estas mesmas boas horas para programar.
+                            Desde os meus 11 anos de idade, durante boas horas do meu dia eu estava em frente a um computador, inicialmente fascinado com jogos, para então anos depois utilizar estas mesmas boas horas para aprender a programar. Com meus 15 anos eu ja prestava manutenção em computadores e notebooks na minha região.
                             <br/>
                             <br/>
-                            Eu acredito em uma forte contribuição de tudo isso na minha formação como pessoa. Eu, a partir de um gosto por desenho enquanto criança, cheguei a trabalhar com artes plásticas por 3 anos, e prestei por mais de 6 anos serviços em manutenção de computadores e também redes de baixa complexidade. E por estar sempre em diferentes meios, falando com diferentes pessoas, existe um impacto na comunicação e tratamento que tenho hoje. Assim como nos meus hobbies e gostos.
+                            Como hobbies, hoje, eu gosto muito de desenhar, e em certo momento já fiz disso um trabalho. Além de programar demanas que eu mesmo invento.
+                            <br/>
 
                         </p>
 
