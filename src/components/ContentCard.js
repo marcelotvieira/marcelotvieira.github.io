@@ -13,10 +13,11 @@ const ContentCard = ({ content }) => {
         { name: 'react', icon: <i style={{ color: 'rgb(147, 147, 251)' }} key="react" className="fa-brands fa-react" /> },
         { name: 'node', icon: <i style={{ color: 'rgb(164, 160, 66)' }} key="node" className="fa-brands fa-node-js" /> },
         { name: 'docker', icon: <i style={{ color: 'rgb(147, 147, 251)' }} key="docker" className="fa-brands fa-docker" /> },
-        { name: 'mysql', icon: <i style={{ color: 'rgb(85, 103, 217)' }} key="mysql" className="fa-solid fa-database" /> },
+        { name: 'database', icon: <i style={{ color: 'rgb(85, 103, 217)' }} key="mysql" className="fa-solid fa-database" /> },
         { name: 'css', icon: <i style={{ color: 'rgb(85, 103, 217)' }} key="css" className="fa-brands fa-css3-alt" /> },
         { name: 'server', icon: <i style={{ color: 'rgb(85, 103, 217)' }} key="server" className="fa-solid fa-server" /> },
         { name: 'javascript', icon: <i style={{ color: '#abd02f' }} key="javascript" className="fa-brands fa-square-js" /> },
+        { name: 'dotnet', icon: <i style={{ color: '#abd02f' }} key="dotnet" className="fa-brands fa-windows" /> }
 
 
     ];

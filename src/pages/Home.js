@@ -6,7 +6,6 @@ import animateContext from '../context/animateContext';
 const Home = () => {
 
     const { pathname } = useLocation();
-
     const { location } = useContext(animateContext);
 
     if (pathname !== location ) return <Redirect to={location} />

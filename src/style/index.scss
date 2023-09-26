@@ -3,6 +3,7 @@ $p-light: #828282;
 $p-very-light: #949494;
 $p-extra-light: rgba(255, 255, 255, 0.08);
 $p-very-extra-light: rgba(255, 255, 255, 0.03);
+$p-very-light2: #9494941a;
 $secondary: #FF914D;
 $white: #FFFF;
 
@@ -261,6 +262,33 @@ $white: #FFFF;
     }
 }
 
+@keyframes homestacks {
+    from {
+        transform:  perspective(100px) rotateY(-30deg);
+    }
+    to {
+
+        transform: perspective(100px) rotateY(30deg)  ;
+    }
+}
+
+.home-stacks-container {
+    max-width: 60%;
+    margin: auto;
+    border-radius: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    .slider-image {
+        filter: drop-shadow(.5rem  2rem .2rem $p-very-light2);
+        margin: auto;
+        max-width: 4rem;
+        max-height: 4rem;
+        animation: homestacks 2s infinite alternate;
+        transform: rotateX(-30deg);
+    }
+}
 .screen-container {
     max-width: 1388px;
     margin: auto;
@@ -390,10 +418,10 @@ i {
     color: $white;
     display: flex;
     width: 100%;
-    height: 70vh;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin: 2rem auto;
+    margin-top: 3rem;
 
     .avatar {
         max-width: 26rem;
@@ -788,6 +816,15 @@ i {
 }
 
 @media screen and (max-width: 900px) {
+    .home-stacks-container {
+        gap: 1rem;
+        .slider-image {
+            max-width: 2rem!important;
+            max-height: 2rem!important;
+        }
+
+    }
+
 
     .container {
         &.light {

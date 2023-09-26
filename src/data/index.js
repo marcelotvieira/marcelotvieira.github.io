@@ -30,11 +30,22 @@ const skills = [
         ]
     },
     {
-        name: 'Arquiteturas',
-        image: require('../images/software-architecture.png'),
+        name: 'C#',
+        image: require('../images/csharp.png'),
         subTitles: [
-            'MSC',
+            'Rest APIs',
+            'ASP.NET ^6 ',
             'MVC',
+            'Entity FrameworkCore',
+            'POO',
+        ]
+    },
+    {
+        name: 'Next JS',
+        image: require('../images/next.png'),
+        subTitles: [
+            'SSR',
+            'SSG',
         ]
     },
     {
@@ -48,10 +59,19 @@ const skills = [
         ]
     },
     {
+        name: 'Arquiteturas',
+        image: require('../images/software-architecture.png'),
+        subTitles: [
+            'MSC',
+            'MVC',
+        ]
+    },
+    {
         name: 'Docker',
         image: require('../images/docker.png'),
         subTitles: [
             'Docker Cli',
+            'Compose',
         ]
     },
     {
@@ -59,6 +79,7 @@ const skills = [
         image: require('../images/database.png'),
         subTitles: [
             'MySQL',
+            'Sql Server',
             'MongoDB (Mongoose)',
         ]
     },
@@ -74,7 +95,6 @@ const skills = [
         name: 'Other Skills',
         image: require('../images/side.png'),
         subTitles: [
-            'POO',
             'SOLID',
             'Github',
             'Bash',
@@ -134,7 +154,7 @@ const content = [
         repository: 'https://github.com/marcelotvieira/store-manager-api',
         tags: [
             'estudo',
-            'mysql',
+            'database',
             'docker',
             'node',
         ]
@@ -375,7 +395,7 @@ const content = [
             'estudo',
             'teste',
             'node',
-            'mysql',
+            'database',
         ]
     },
         {
@@ -477,6 +497,100 @@ const content = [
             'typescript'
         ]
     },
+    {
+        id :13,
+        name: 'BIManager Web App',
+        image: require('../images/logo.png'),
+        description: 'Projeto desenvolvido individualmente. Tem a finalidade de consultar e extrair dados a partir de uma base de dados cadastrada.',
+        source: 'https://github.com/marcelotvieira/bimanager_webapp',
+        usedStacks: [
+            {
+                name: 'React',
+                usedTo: 'Utilizado na construção de páginas e componentes',
+            },
+            {
+                name: 'API',
+                usedTo: 'A aplicação consome de uma API presente no meu portfólio.',
+            },
+            {
+                name: 'SASS',
+                usedTo: 'O estilo da aplicação foi construído utilizando o Motor CSS SASS',
+            },
+            {
+                name: 'AntDesign',
+                usedTo: 'A aplicação faz uso de alguns componentes do UI Kit AntDesign'
+            },
+        ],
+        repository: 'https://github.com/marcelotvieira/bimanager_webapp',
+        tags: [
+            'estudo',
+            'react',
+            'css',
+            'sass',
+            'typescript'
+        ]
+    },
+    {
+        id :13,
+        name: 'BIManager API - .NET',
+        image: require('../images/logo.png'),
+        description: 'Projeto desenvolvido individualmente. Api desenvolvida com .NET 6, utilizando EntityFrameworkCore 7 e ASP.NET Core 6',
+        source: 'https://github.com/marcelotvieira/BIManager-dotnet',
+        usedStacks: [
+            {
+                name: '.NET 6',
+                usedTo: 'Utilizado majoritariamente C# no ambiente .NET',
+            },
+            {
+                name: 'Entity Frameork Corre',
+                usedTo: 'Utilizado como Object Relational Mapping para definir entidades, foi utilizado mapeamento com Data Annotations',
+            },
+            {
+                name: 'ASP.NET Core',
+                usedTo: 'A API é construída com asp.net e possui rotas http para realizar CRUD em banco de dados.',
+            },
+        ],
+        repository: 'https://github.com/marcelotvieira/BIManager-dotnet',
+        tags: [
+            'estudo',
+            'server',
+            'database',
+            'dotnet',
+        ]
+    },
+    {
+        id :14,
+        name: 'Megaminas Distribuidora',
+        image: require('../images/megaminas.png'),
+        description: 'Projeto executado para uma distribuidora atuante na região de Belo Horizonte.',
+        source: 'https://megaminasdistribuidora.com.br',
+        usedStacks: [
+            {
+                name: 'React',
+                usedTo: 'Utilizado na construção de páginas e componentes',
+            },
+            {
+                name: 'Email-Js',
+                usedTo: 'A aplicação consome de uma API para utilização de um servidor de email.',
+            },
+            {
+                name: 'SASS',
+                usedTo: 'O estilo da aplicação foi construído utilizando o Motor CSS SASS',
+            },
+            {
+                name: 'AntDesign',
+                usedTo: 'A aplicação faz uso de alguns componentes do UI Kit AntDesign'
+            },
+        ],
+        repository: 'https://github.com/marcelotvieira',
+        tags: [
+            'react',
+            'css',
+            'sass',
+            'typescript'
+        ]
+    },
+    
 ]
 
 const contacts = [

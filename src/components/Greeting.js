@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import Avatar from './Avatar';
 import { Animated } from "react-animated-css";
 import animateContext from '../context/animateContext';
+import StackSlider from './StackSlider';
 
 const Greeting = () => {
     const { visibleContent } = useContext(animateContext);
@@ -32,6 +33,7 @@ const Greeting = () => {
                     <Avatar />
                 </div>
             </div>
+            <StackSlider />
         </Animated>
     );
 };
