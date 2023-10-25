@@ -398,39 +398,6 @@ const content = [
             'database',
         ]
     },
-        {
-        id: 12,
-        name: 'Engineering Project Manager',
-        image: require('../images/logo.png'),
-        description: 'Projeto desenvolvido individualmente para aplicar estudos em REST APIs e NodeJs com prisma e MongoDB. Uma api simples para gerencimaneto de projetos e clientes de um projetista estrutural.',
-        source: 'https://github.com/marcelotvieira/management-dashboard',
-        usedStacks: [
-            {
-                name: 'Express',
-                usedTo: 'A api utiliza um servidor Express',
-            },
-            {
-                name: 'MongoDB',
-                usedTo: 'A aplicação realiza um CRUD em um banco de dados MongoDB.',
-            },
-            {
-                name: 'Docker',
-                usedTo: 'Tanto o servidor backend, quanto o banco de dados rodam sobre contêineres docker',
-            },
-            {
-                name: 'Prisma',
-                usedTo: 'A aplicação utiliza o PrismaJS como ORM para definição de modelos e tipos'
-            },
-        ],
-        repository: 'https://github.com/marcelotvieira/management-dashboard',
-        tags: [
-            'typescript',
-            'estudo',
-            'mongo',
-            'docker',
-            'node',
-        ]
-    },
     {
         id :12,
         name: 'Engineering Project Manager',
@@ -498,7 +465,7 @@ const content = [
         ]
     },
     {
-        id :13,
+        id :14,
         name: 'BIManager Web App',
         image: require('../images/logo.png'),
         description: 'Projeto desenvolvido individualmente. Tem a finalidade de consultar e extrair dados a partir de uma base de dados cadastrada.',
@@ -530,8 +497,26 @@ const content = [
             'typescript'
         ]
     },
+     {
+        id :15,
+        name: 'Trybank - C#',
+        image: require('../images/logo.png'),
+        description: 'Projeto com fim reprobatório desenvolvido individualmente. Se trata de uma aplicação orientada a objeto para simular eventos bancários.',
+        source: 'https://github.com/marcelotvieira/trybank',
+        usedStacks: [
+            {
+                name: '.NET 6',
+                usedTo: 'Utilizado majoritariamente C# no ambiente .NET',
+            },
+        ],
+        repository: 'https://github.com/marcelotvieira/trybank',
+        tags: [
+            'estudo',
+            'dotnet',
+        ]
+    },
     {
-        id :13,
+        id :16,
         name: 'BIManager API - .NET',
         image: require('../images/logo.png'),
         description: 'Projeto desenvolvido individualmente. Api desenvolvida com .NET 6, utilizando EntityFrameworkCore 7 e ASP.NET Core 6',
@@ -559,7 +544,7 @@ const content = [
         ]
     },
     {
-        id :14,
+        id :17,
         name: 'Megaminas Distribuidora',
         image: require('../images/megaminas.png'),
         description: 'Projeto executado para uma distribuidora atuante na região de Belo Horizonte.',
