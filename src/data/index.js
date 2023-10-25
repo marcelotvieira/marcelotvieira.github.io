@@ -574,8 +574,7 @@ const content = [
             'sass',
             'typescript'
         ]
-    },
-    
+    }
 ]
 
 const contacts = [
