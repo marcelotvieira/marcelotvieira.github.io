@@ -17,9 +17,8 @@ const ContentCard = ({ content }) => {
         { name: 'css', icon: <i style={{ color: 'rgb(85, 103, 217)' }} key="css" className="fa-brands fa-css3-alt" /> },
         { name: 'server', icon: <i style={{ color: 'rgb(85, 103, 217)' }} key="server" className="fa-solid fa-server" /> },
         { name: 'javascript', icon: <i style={{ color: '#abd02f' }} key="javascript" className="fa-brands fa-square-js" /> },
+        { name: 'typescript', icon: <img alt="" src={require('../images/typescriptIcon.png')} style={{ color: '#abd02f', width: 16, height: 16, }} key="typescript" className="fa-brands fa-square-js" /> },
         { name: 'dotnet', icon: <i style={{ color: '#abd02f' }} key="dotnet" className="fa-brands fa-windows" /> }
-
-
     ];
 
     const { tags, name, description, image, repository, source } = content;

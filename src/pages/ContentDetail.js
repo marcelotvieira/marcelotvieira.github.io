@@ -26,27 +26,33 @@ function ContentDetail({ match }) {
 
                 <div className="content-detail">
                     <div class="presentation-box">
-                        <img src={data.image} alt="" />
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href={data.source}
+                        >
+                            <img src={data.image} alt="" />
+                        </a>
                         <div className="source-buttons">
-                        <a
-                          target="_blank"
-                          rel="noreferrer"
-                          href={data.repository}
-                          >
-                            <i style={{ color: '#FF914D' }} className="fa-brands fa-github fa-2x" />
-                        </a>
-                        {data.repository !== data.source && (
-                        <a
-                          target="_blank"
-                          rel="noreferrer"
-                          href={data.source}
-                          >
-                        <i style={{ color: '#FF914D' }} className="fa-solid fa-right-to-bracket fa-2x" />
-                        </a>
-                        )}
-                    </div>
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href={data.repository}
+                            >
+                                <i style={{ color: '#FF914D' }} className="fa-brands fa-github fa-2x" />
+                            </a>
+                            {data.repository !== data.source && (
+                                <a
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    href={data.source}
+                                >
+                                    <i style={{ color: '#FF914D' }} className="fa-solid fa-right-to-bracket fa-2x" />
+                                </a>
+                            )}
+                        </div>
 
-                    <div className="navigate">
+                        <div className="navigate">
                             <div>
                                 <i className="fa-regular fa-circle-left fa-3x" />
                                 <button
@@ -55,10 +61,10 @@ function ContentDetail({ match }) {
                                     type="button">
                                 </button>
                             </div>
-                           
+
                         </div>
-                        </div>
-                    
+                    </div>
+
 
                     <div className="content-detail-info">
                         <h2 className="title">{data.name}</h2>

@@ -574,6 +574,62 @@ const content = [
             'sass',
             'typescript'
         ]
+    },
+    {
+        id :18,
+        name: 'Cardápio do bebê',
+        image: require('../images/cardapiodobebe.png'),
+        description: 'Projeto executado para promover a venda de uma apostila sobre cuidados alimentares com bebês.',
+        source: 'https://produtodigitalseguro.com.br',
+        usedStacks: [
+            {
+                name: 'React',
+                usedTo: 'Utilizado na construção de páginas e componentes',
+            },
+            {
+                name: 'SASS',
+                usedTo: 'O estilo da aplicação foi construído utilizando o Motor CSS SASS',
+            },
+            {
+                name: 'AntDesign',
+                usedTo: 'A aplicação faz uso de alguns componentes do UI Kit AntDesign'
+            },
+        ],
+        repository: 'https://github.com/marcelotvieira/cardapiodobebe',
+        tags: [
+            'react',
+            'css',
+            'sass',
+            'typescript'
+        ]
+    },
+    {
+        id :19,
+        name: 'Nery Barber',
+        image: require('../images/nery.png'),
+        description: 'Projeto executado para uma barbearia, com intuito institucional e informativo.',
+        source: 'https://nerybarber.net.br',
+        usedStacks: [
+            {
+                name: 'React',
+                usedTo: 'Utilizado na construção de páginas e componentes',
+            },
+            {
+                name: 'SASS',
+                usedTo: 'O estilo da aplicação foi construído utilizando o Motor CSS SASS',
+            },
+            {
+                name: 'AntDesign',
+                usedTo: 'A aplicação faz uso de alguns componentes do UI Kit AntDesign'
+            },
+        ],
+        repository: 'https://github.com/marcelotvieira/nerybarber',
+        tags: [
+            'react',
+            'css',
+            'sass',
+            'typescript'
+        ]
     }
 ]
 
